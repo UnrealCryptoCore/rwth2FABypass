@@ -23,4 +23,5 @@ Installing the extension in Chromium based browsers is as of right now only poss
 3. Open the extension and paste the key in the specified textfield and hit save.
 4. The extension should have generated a new code. Use it to verify your token and finish the creation process.
 
-Hint: The second textfield is used to specify the name of your TOTP-Token, so that you don't need to manually select the right token every time.
+Hint: The second textfield is used to specify part of the name of your TOTP-Token, so that you don't need to manually select the right token every time.
+Second hint: Save your secret key somewhere so you can use the extension on multiple devices with a single token.
