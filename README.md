@@ -15,3 +15,12 @@ If the installation does not start automatically you may need to download the fi
 ### Chrome
 
 Installing the extension in Chromium based browsers is as of right now only possible in developer mode by installing the .zip file under [Releases](https://github.com/UnrealCryptoCore/rwth2FABypass/releases/) or by cloning the repo and selecting the folder as the extension.
+
+## Usage
+
+1. Create a new TOTP-Token in the rwth-aachen selfservice.
+2. Click on Token Secret and copy the 32-character long key in the clipboard.
+3. Open the extension and paste the key in the specified textfield and hit save.
+4. The extension should have generated a new code. Use it to verify your token and finish the creation process.
+
+Hint: The second textfield is used to specify the name of your TOTP-Token, so that you don't need to manually select the right token every time.
