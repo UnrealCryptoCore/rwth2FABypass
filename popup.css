@@ -1,0 +1,123 @@
+body {
+    width: 300px;
+    background-color: #1666c9;
+    color: darkgrey;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    color: white;
+}
+
+button {
+    border-radius: 0;
+    width: 4rem;
+}
+
+a,
+a:visited {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span {
+    color: white;
+    font-size: 0.8rem;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    margin-inline: 0.1rem;
+    border-radius: 0.2rem;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
+#save-btn {
+    margin-left: 0.5rem;
+}
+
+
+.wrapper-center {
+    display: flex;
+    margin-block: 0.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    margin-block: 0.2rem;
+}
+
+.tfa-bypass {
+    margin-top: 1.5rem;
+}
+
+.totp-saver {
+    display: none;
+    margin-inline: 0;
+    padding: 1rem;
+    border-style: solid;
+    border-color: #333;
+    border-width: 0.5rem;
+}
+
+.tfa-warning {
+    color: yellow;
+    font-size: 0.7rem;
+}
+
+.hider:hover {
+    cursor: pointer;
+}
+
+#two-fa-heading {
+    display: inline;
+    margin-right: 1rem;
+}
+
+#generate-btn {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0.2rem;
+    background-color: #044698;
+    color: white;
+}
+
+#generate-btn:hover {
+    background-color: #023678;
+}
+
+#clear-btn {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: red;
+    padding: 0.2rem;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: darkred;
+}
+
+
+#toggle-btn {
+    margin-block: auto;
+    margin-left: auto;
+    margin-right: 0;
+    height: min-content;
+}

@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "RWTH 2FA-Bypass",
+  "version": "1.1",
+  "description": "A simple 2-FA bypass for *.rwth-aachen.de.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+ "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sso.rwth-aachen.de/idp/profile/SAML2/Redirect/SSO*"
+      ],
+      "js": [
+        "utils.js",
+        "twoauthbypass.js",
+        "totp.js"
+      ]
+    }
+  ]
+}

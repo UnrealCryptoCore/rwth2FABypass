@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Extension</title>
+    <link rel="stylesheet" href="popup.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <h2>Even Better Quality RWTH!</h2>
+    <ul>
+        <li>
+            <a id="rwthonline-login" href="#">rwth online</a>
+        </li>
+        <li>
+            <a id="moodle-login" href="#">rwth moodle</a>
+        </li>
+        <li>
+            <a id="selfservice-login" href="#">rwth self-service</a>
+        </li>
+    </ul>
+    <div class="tfa-bypass">
+        <div class="warning">
+            <span class="tfa-warning">
+                Warning: enabling auto 2-FA filler removes one layer of security and
+                therefore increases the risk of your account getting hacked!
+            </span>
+        </div>
+        <div id="tfa-bypass-open" class="hider">
+            <h3>&gt 2-FA bypass</h3>
+        </div>
+        <div id="tfa-bypass" class="totp-saver">
+            <div class="wrapper">
+                <span><strong>Enabled</strong></span>
+                <input type="checkbox" id="toggle-btn"></button>
+            </div>
+            <div class="wrapper">
+                <span><strong>Clear extension storage</strong></span>
+                <button id="clear-btn">clear</button>
+            </div>
+            <div class="wrapper">
+                <span><strong>Token: <span id="verify-token">------</span></strong></span>
+                <button id="generate-btn">update</button>
+            </div>
+            <div class="wrapper-center">
+                <input type="text" id="key-input" placeholder="TOTP-key">
+                <button id="key-btn">save</button>
+            </div>
+            <div class="wrapper-center">
+                <input type="text" id="name-input" placeholder="TOTP-tokenId/-name">
+                <button id="name-btn">save</button>
+            </div>
+        </div>
+    </div>
+    <script src="totp.js""></script>
+    <script src=" utils.js""></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>
